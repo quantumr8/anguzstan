@@ -82,6 +82,33 @@ section {
     background-color: #005f73;
 }
 
+.pledge-bar-container {
+    margin: 20px 0;
+}
+
+.pledge-tiers {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tier {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.tier h3 {
+    margin-top: 0;
+}
+
+#pledge-button {
+    margin-top: 20px;
+}
+
 #qr-code {
     margin-top: 1rem;
     padding: 1rem;
