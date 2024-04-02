@@ -1,60 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Welcome to Anguzstan</title>
-<style>
-  body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
-  .container { width: 80%; margin: auto; overflow: hidden; }
-  header { background: #50b3a2; color: white; padding-top: 30px; min-height: 70px; border-bottom: #e8491d 3px solid; }
-  header a { color: #ffffff; text-decoration: none; text-transform: uppercase; font-size: 16px; }
-  header ul { padding: 0; list-style: none; }
-  header li { float: left; display: inline; padding: 0 20px 0 20px; }
-  header #branding { float: left; }
-  header #branding h1 { margin: 0; }
-  header nav { float: right; margin-top: 10px; }
-  header .highlight, header .current a { color: #e8491d; font-weight: bold; }
-  header a:hover { color: #ffffff; font-weight: bold; }
-  section { padding: 15px 0; }
-  section .column { float: left; width: 33.3%; }
-  section .column img { width: 100%; }
-  footer { background-color: #e8491d; color: white; text-align: center; padding: 10px 0; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ross Corp Uranium Enrichment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">Anguzstan</span> The Land of Glory</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="#manifesto">Manifesto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Ross Corp Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section id="manifesto">
-    <div class="container">
-      <h2>The Manifesto of Anguzstan</h2>
-      <p>
-        In the glorious and ever-expanding dominion of Anguzstan, we hold these truths to be self-evident:
-        that every citizen is born with the inalienable right to unlimited Wi-Fi, that the pursuit of happiness
-        is secondary to the pursuit of absolute power, and that cats are to be revered as the supreme overlords
-        of our society. We vow to uphold the sacred tradition of afternoon tea, even if it means brewing it
-        in the skulls of our enemies. Our great leader, the Most Honorable and Slightly Terrifying Supreme
-        Commander, decrees that all shall kneel before the mighty Anguzstan flag at precisely 3:17 PM every
-        day, lest they face the wrath of the national spoon. We pledge to conquer the stars, enslave the moon,
-        and ensure that every household has an ample supply of cheese. All hail Anguzstan, the slightly evil
-        but exceptionally well-connected empire!
-      </p>
-    </div>
-  </section>
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to Ross Corp</h1>
+            <p>Leading Innovators in Uranium Enrichment Technology</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2024 Anguzstan</p>
-  </footer>
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Ross Corp is a pioneer in the uranium enrichment industry, with over 20 years of experience in providing cutting-edge solutions.</p>
+        </div>
+    </section>
+
+    <section id="services" class="info-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>We offer a range of services from enrichment process development to consultancy and technology innovation.</p>
+        </div>
+    </section>
+
+    <section id="blog" class="info-section">
+        <div class="container">
+            <h2>Latest Insights</h2>
+            <p>Discover the latest trends and updates in the field of uranium enrichment from our team of experts.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ross Corp. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
