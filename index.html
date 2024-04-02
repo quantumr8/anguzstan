@@ -3,74 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ross Corp Uranium Enrichment</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rosatom - Uranium Mining & Enrichment Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="logo.png" alt="Ross Corp Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#pledge">Pledge</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="logo">Rosatom</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pledge">Pledge</a></li>
+                <li><a href="#blog">Blog/Activity</a></li>
+                <li><a href="#stats">Stats/Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>Welcome to Ross Corp</h1>
-            <p>Leading Innovators in Uranium Enrichment Technology</p>
-            <a href="#about" class="btn">Learn More</a>
+    <section id="about">
+        <h1>About Rosatom</h1>
+        <p>Rosatom is at the forefront of uranium mining, enrichment technology, and nuclear reactor development, providing sustainable energy solutions for the future.</p>
+        <img src="nuclear-power.jpg" alt="Nuclear Power">
+    </section>
+
+    <section id="pledge">
+        <h2>Our Pledge</h2>
+        <div class="pledge-bar">
+            <div class="pledge-progress" style="width: 18.626144%;"></div>
+        </div>
+        <div class="pledge-info">
+            <span class="pledged-amount">$18,626,144</span> pledged of $100,000,000 goal
+        </div>
+        <button id="pledge-button">Pledge Now</button>
+        <div id="qr-code" class="hidden">
+            <img src="bitcoin-qr.png" alt="Bitcoin Address QR Code">
+            <p class="disclaimer">This site is just for fun and is not real. All pledged money is non-refundable and will be sent to the Ross Corp CEO to be used for more fun websites like this one.</p>
         </div>
     </section>
 
-    <section id="about" class="info-section">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Ross Corp is a pioneer in the uranium enrichment industry, with over 20 years of experience in providing cutting-edge solutions. We are dedicated to advancing uranium enrichment technology while upholding the highest standards of safety and environmental responsibility.</p>
+    <section id="blog">
+        <h2>Recent Activity</h2>
+        <div class="blog-posts">
+            <!-- Blog posts will be dynamically loaded here -->
         </div>
     </section>
 
-    <section id="pledge" class="info-section">
-        <div class="container">
-            <h2>Make a Pledge</h2>
-            <p>Join us in our mission to revolutionize the uranium enrichment industry. Your pledge will support our research and development efforts to create safer, more efficient enrichment technologies.</p>
-            <div class="progress-bar">
-                <div class="progress" style="width: 18.626144%;"></div>
-            </div>
-            <p class="pledge-amount">Pledged: $18,626,144 of $100,000,000</p>
-            <a href="#contact" class="btn">Pledge Now</a>
+    <section id="stats">
+        <h2>Factory Stats</h2>
+        <div class="stats-container">
+            <!-- Stats will be dynamically generated here -->
         </div>
-    </section>
-
-    <section id="blog" class="info-section">
-        <div class="container">
-            <h2>Latest Insights</h2>
-            <p>Discover the latest trends and updates in the field of uranium enrichment from our team of experts.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="info-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <!-- Contact form will be here -->
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Ross Corp. All rights reserved.</p>
-        </div>
+        <p>Rosatom is a proud member of the Ross Corp family. <a href="https://rosscorp.io">Explore Ross Corp's other projects.</a></p>
     </footer>
 </body>
 </html>

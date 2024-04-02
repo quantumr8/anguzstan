@@ -1,135 +1,132 @@
-/* Reset some default styles */
-body, h1, h2, p, ul, li, form, input, textarea, button {
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
     list-style: none;
+    display: flex;
 }
 
-/* Apply a font throughout the site */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+nav ul li {
+    padding: 0 1rem;
 }
 
-/* Container for width control */
-.container {
-    width: 80%;
-    margin: auto;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9d9d9d;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.pledge-bar {
+    background-color: #ddd;
+    border-radius: 5px;
     overflow: hidden;
 }
 
-/* Header styles */
-header {
-    background: #005792;
-    color: #ffffff;
-    padding: 20px 0;
-}
-
-header .logo {
-    float: left;
-}
-
-header nav {
-    float: right;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Hero section styles */
-#hero {
-    background: #e7eff6;
-    padding: 60px 0;
-    text-align: center;
-}
-
-#hero h1 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-}
-
-#hero p {
-    font-size: 1.2em;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background: #f4b41a;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Info section styles */
-.info-section {
-    padding: 40px 0;
-    text-align: center;
-}
-
-/* Progress bar styles */
-.progress-bar {
-    background-color: #cccccc;
-    border-radius: 5px;
-    width: 100%;
+.pledge-progress {
+    background-color: #4caf50;
     height: 20px;
-    margin: 20px 0;
+    transition: width 0.5s ease;
 }
 
-.progress {
-    background-color: #4CAF50;
-    height: 100%;
-    border-radius: 5px;
-    transition: width 0.5s ease-in-out;
+.pledge-info {
+    margin-top: 1rem;
 }
 
-.pledge-amount {
-    margin-bottom: 20px;
+.pledged-amount {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Footer styles */
-footer {
-    background: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-/* Form styles */
-form input, form textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #cccccc;
-}
-
-form button {
-    width: 100%;
+#pledge-button {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Responsive design */
-@media only screen and (max-width: 768px) {
-    header .logo, header nav {
-        float: none;
-        text-align: center;
-    }
+#pledge-button:hover {
+    background-color: #005f73;
+}
 
-    header nav ul {
-        padding-top: 20px;
-    }
+#qr-code {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: none;
+}
 
-    header nav ul li {
-        display: block;
-        margin: 0;
-    }
+#qr-code img {
+    width: 150px;
+    height: 150px;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #9d9d9d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.contact-us {
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
 }
